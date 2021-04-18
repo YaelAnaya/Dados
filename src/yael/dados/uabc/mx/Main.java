@@ -1,4 +1,5 @@
 package yael.dados.uabc.mx;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -15,8 +16,8 @@ public class Main {
             System.out.println("Lado: " + dado.tirarDado());
 
             System.out.println("¿Quiere lanzar otro dado?");
-            option = scanner.next();
+            option = scanner.next().toLowerCase();
 
-        }while(option.equals("Si"));
-    } //k pex
+        }while(option.equals("si"));
+    }
 }
